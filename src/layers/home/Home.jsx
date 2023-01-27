@@ -3,7 +3,7 @@ import header_background from "./Switched_pitting_usb_key_text4_whiteback.png";
 
 const Home = () => {
     return (
-        <header>
+        <header id="home">
             <h1 class="home__title">Alexandra <br />Développeuse Web</h1>
             <img class="home__banner" src={header_background}
                 alt="Clé USB 3D libérant des logos relatifs au développement" />

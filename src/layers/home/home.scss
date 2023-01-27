@@ -1,34 +1,36 @@
 #home {
     display: flex;
     /* justify-content: center; */
-    max-height: 40vw;
+    height: 40vw;
 }
 
-.home__banner {
-    width: 100%;
-    object-fit: cover;
-}
+.home {
+    &__banner {
+        width: 100%;
+        object-fit: cover;
+    }
 
-.home__title {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    margin: 0;
-    font-size: 18px;
-}
+    &__title {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        margin: 0;
+        font-size: 18px;
+    }
 
-.home__menu-button {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-}
+    &__menu-button {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
 
-.home__nav-bar {
-    position: fixed;
-    top: 20px;
-    right: -100px;
-}
+    &__nav-bar {
+        position: fixed;
+        top: 20px;
+        right: -100px;
+    }
 
-.home__nav-bar .display {
-    transform: translate(-100%, 0);
+    &__nav-bar .display {
+        transform: translate(-100%, 0);
+    }
 }
