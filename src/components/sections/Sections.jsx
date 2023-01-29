@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Sections = () => {
+const Sections = (props) => {
     return (
         <section>
-            <h2>Let's try</h2>
+            <h2>{props.title}
+                <span>{props.subtitle}</span>
+            </h2>
+            <div>{props.content}</div>
         </section>
     );
 };
