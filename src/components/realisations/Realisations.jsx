@@ -26,13 +26,13 @@ const Realisations = () => {
     return (
         <>
             <div className='realisations__buttons'>
-                {technos.map((techno) => (
-                    <Button title={techno} />
+                {technos.map((techno, index) => (
+                    <Button title={techno} key={index} />
                 ))}
             </div>
             <div>
-                {realisations.map((projet) => (
-                    <Project title={projet.title} img={projet.img} alt={projet.alt} link={projet.link} />
+                {realisations.map((projet, index) => (
+                    <Project title={projet.title} img={projet.img} alt={projet.alt} link={projet.link} key={index} />
                 ))}
             </div>
         </>
