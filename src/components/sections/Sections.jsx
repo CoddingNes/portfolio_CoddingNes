@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sections = (props) => {
     return (
-        <section>
+        <section id={props.id}>
             <h2>{props.title}
                 <span>{props.subtitle}</span>
             </h2>

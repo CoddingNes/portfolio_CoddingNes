@@ -1,0 +1,47 @@
+form {
+    margin: auto;
+    color: $primary-color;
+    font-size: 12px;
+}
+
+input,
+textarea {
+    margin: 7px 0;
+    width: 100%;
+    border-style: none;
+    background-color: transparent;
+}
+
+label {
+    // width: 70px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+.form {
+
+    &__message,
+    &__name,
+    &__email {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: rgba($primary-color, 0.1);
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+
+    &__message {
+        padding-top: 5px;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    &__send-button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        translate: -10px -10px;
+    }
+
+}
