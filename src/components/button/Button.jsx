@@ -1,9 +1,11 @@
 import React from 'react';
+import './button.scss';
+
 
 const Button = (props) => {
     return (
         <>
-            <button className={props.class}>{props.title}</button>
+            <button className={"button-primaryColor " + props.class}>{props.title}</button>
         </>
     );
 };

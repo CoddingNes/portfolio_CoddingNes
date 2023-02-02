@@ -1,9 +1,10 @@
 import React from 'react';
+import './skills.scss';
 
-let skills = ["HTML", "CSS", "React.JS", "Three.JS", "Blender", "", "", "", "", "", ""];
+const skills = ["HTML", "CSS", "React.JS", "Three.JS", "Blender", "", "", "", "", "", ""];
 
 
-function getRandomInt(max) {
+let getRandomInt = (max) => {
     return (Math.floor(Math.random() * max));
 }
 

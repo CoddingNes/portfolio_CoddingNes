@@ -1,6 +1,8 @@
 import React from 'react';
 import Input from '../input/Input';
 import Textarea from '../textarea/Textarea';
+import './form.scss';
+
 
 
 const Form = () => {

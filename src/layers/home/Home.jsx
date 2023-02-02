@@ -1,5 +1,6 @@
 import React from 'react';
 import header_background from "./Switched_pitting_usb_key_text4_whiteback.png";
+import './home.scss';
 
 const Home = () => {
     return (

@@ -1,5 +1,7 @@
 import React from 'react';
 import footer_background from "./Background_white.png";
+import './footer.scss';
+
 
 const Footer = () => {
     return (

@@ -1,4 +1,6 @@
 import React from 'react';
+import './presentation.scss';
+
 
 const Presentation = () => {
     return (

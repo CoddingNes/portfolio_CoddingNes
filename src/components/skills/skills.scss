@@ -1,9 +1,28 @@
+@import '../../style/variables.scss';
+
 .skills__grid {
-    margin: 0 20px;
+    position: relative;
+    margin: 20px 0px 40px;
+    padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 2px;
     grid-auto-rows: minmax(40px, auto);
+    background-color: $secondary-color;
+    // border: solid 1px $primary-color;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        height: 104%;
+        width: 100%;
+        background-color: $primary-color;
+        opacity: 0.04;
+        z-index: -1;
+    }
 
 
     &-item {
@@ -15,6 +34,8 @@
         white-space: nowrap;
         overflow: visible;
         text-overflow: visible;
+        font-weight: 700;
+        font-size: 18px;
 
         &:nth-child(1) {
             grid-column: 1 / 5;

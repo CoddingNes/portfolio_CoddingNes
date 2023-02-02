@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../button/Button';
 import Project from '../project/Project';
+import './realisations.scss';
 
 
 
@@ -27,7 +28,7 @@ const Realisations = () => {
         <>
             <div className='realisations__buttons'>
                 {technos.map((techno, index) => (
-                    <Button title={techno} key={index} />
+                    <Button class={"realisations__buttons-button " + techno} title={techno} key={index} />
                 ))}
             </div>
             <div>

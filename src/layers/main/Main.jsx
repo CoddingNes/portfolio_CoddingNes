@@ -4,6 +4,8 @@ import Presentation from '../../components/presentation/Presentation';
 import Realisations from '../../components/realisations/Realisations';
 import Sections from '../../components/sections/Sections';
 import Skills from '../../components/skills/Skills';
+import './main.scss';
+
 
 const Main = () => {
     return (

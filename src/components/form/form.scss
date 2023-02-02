@@ -1,3 +1,5 @@
+@import '../../style/variables.scss';
+
 form {
     margin: auto;
     color: $primary-color;
@@ -32,16 +34,9 @@ label {
     }
 
     &__message {
-        padding-top: 5px;
+        padding: 5px 0 30px;
+        margin-bottom: 20px;
         align-items: flex-start;
         position: relative;
     }
-
-    &__send-button {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        translate: -10px -10px;
-    }
-
 }
