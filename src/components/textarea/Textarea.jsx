@@ -8,7 +8,7 @@ const Textarea = (props) => {
         <div className={"form__" + props.title}>
             <label htmlFor={props.title}>{props.label}</label>
             <textarea name={props.title} id={props.title} cols="30" rows="10"></textarea>
-            <Button class="form__send-button" title="Envoyer" />
+            <Button className="form__send-button" title="Envoyer" />
         </div>
     );
 };
