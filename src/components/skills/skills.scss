@@ -1,95 +1,150 @@
 @import '../../style/variables.scss';
 
-.skills__grid {
-    position: relative;
-    margin: 20px 0px 40px;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 2px;
-    grid-auto-rows: minmax(40px, auto);
-    background-color: $secondary-color;
-    // border: solid 1px $primary-color;
-    z-index: 2;
+.skills__grid-item {
+    // background-color: rgb(0, 255, 255, 0.4);
+    // border: solid 2px aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: visible;
+    font-weight: 700;
+    font-size: 18px;
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 2%;
-        left: 2%;
-        height: 104%;
-        width: 100%;
-        background-color: $primary-color;
-        opacity: 0.04;
-        z-index: -1;
+    &:nth-child(1) {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
+
+        @keyframes scaleUp {
+            0% {
+                opacity: 0;
+                scale: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            100% {
+                scale: 1.0;
+            }
+        }
+
+        &.appear {
+            animation: scaleUp 300ms cubic-bezier(0, .2, .88, .63) 400ms forwards;
+        }
     }
 
+    &:nth-child(2) {
+        grid-column: 6 / 8;
+        grid-row: 1 / 3;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
 
-    &-item {
-        /* background-color: rgb(0, 255, 255, 0.4);
-    border: solid 2px aqua; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        white-space: nowrap;
-        overflow: visible;
-        text-overflow: visible;
-        font-weight: 700;
-        font-size: 18px;
+        &.appear {
 
-        &:nth-child(1) {
-            grid-column: 1 / 5;
-            grid-row: 1;
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 600ms forwards;
         }
+    }
 
-        &:nth-child(2) {
-            grid-column: 6 / 8;
-            grid-row: 1 / 3;
+    &:nth-child(3) {
+        grid-column: 1/4;
+        grid-row: 2 / 5;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
+
+        &.appear {
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 800ms forwards;
         }
+    }
 
-        &:nth-child(3) {
-            grid-column: 1/4;
-            grid-row: 2 / 5;
+    &:nth-child(4) {
+        grid-column: 4 / 9;
+        grid-row: 3/5;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
+
+        &.appear {
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 500ms forwards;
         }
+    }
 
-        &:nth-child(4) {
-            grid-column: 4 / 9;
-            grid-row: 3/5;
+    &:nth-child(5) {
+        grid-column: 1/4;
+        grid-row: 4;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
+
+        &.appear {
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 700ms forwards;
         }
+    }
 
-        &:nth-child(5) {
-            grid-column: 1/5;
-            grid-row: 4;
+    &:nth-child(6) {
+        grid-column: 7/10;
+        grid-row: 4/7;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
+
+        &.appear {
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 900ms forwards;
         }
+    }
 
-        &:nth-child(6) {
-            grid-column: 7/10;
-            grid-row: 4/7;
+    &:nth-child(7) {
+        grid-column: 3/5;
+        grid-row: 1/4;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
+
+        &.appear {
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 1100ms forwards;
         }
+    }
 
-        &:nth-child(7) {
-            grid-column: 3/5;
-            grid-row: 1/4;
+    &:nth-child(8) {
+        grid-column: 2/4;
+        grid-row: 5/7;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
+
+        &.appear {
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 1200ms forwards;
         }
+    }
 
-        &:nth-child(8) {
-            grid-column: 2/4;
-            grid-row: 5/7;
+    &:nth-child(9) {
+        grid-column: 4/6;
+        grid-row: 4/6;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
+
+        &.appear {
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 1000ms forwards;
         }
+    }
 
-        &:nth-child(9) {
-            grid-column: 4;
-            grid-row: 4/6;
+    &:nth-child(10) {
+        grid-column: 4/8;
+        grid-row: 6;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
+
+        &.appear {
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 1300ms forwards;
         }
+    }
 
-        &:nth-child(10) {
-            grid-column: 4/8;
-            grid-row: 6;
-        }
+    &:nth-child(11) {
+        grid-column: 6/10;
+        grid-row: 1/5;
+        transform: rotateZ(-30 + (random($limit: 60) * 1deg));
+        scale: 0;
 
-        &:nth-child(11) {
-            grid-column: 6/10;
-            grid-row: 1/5;
+        &.appear {
+            animation: scaleUp 200ms cubic-bezier(0, .2, .88, .63) 1400ms forwards;
         }
     }
 }

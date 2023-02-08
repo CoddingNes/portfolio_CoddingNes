@@ -1,34 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './skills.scss';
+import SkillView from '../skillView/SkillView';
 
-const skills = ["HTML", "CSS", "React.JS", "Three.JS", "Blender", "", "", "", "", "", ""];
 
+const Skills = (props) => {
+    const [showSkill, setShowSkill] = useState(false);
+    const isActive = () => setShowSkill(true);
 
-let getRandomInt = (max) => {
-    return (Math.floor(Math.random() * max));
-}
-
-let randomSkills = [];
-let usedInt = [];
-let randomInt = 0;
-for (let i = 0; i < skills.length; i++) {
-    randomInt = getRandomInt(skills.length)
-    if (usedInt.includes(randomInt)) {
-        randomInt = getRandomInt(skills.length);
-        i--;
-    } else {
-        randomSkills.push(skills[randomInt]);
-        usedInt.push(randomInt);
-    }
-}
-
-const Skills = () => {
     return (
-        <div className="skills__grid">
-            {randomSkills.map((skill, index) => (
-                <div className="skills__grid-item" key={index}>{skill}</div>
-            ))}
-        </div>
+        <>
+            <div
+                className={'skills__grid-item ' + props.class}
+                key={props.key}
+                onClick={isActive}>{props.skill}
+            </div>
+            {showSkill ?
+                <SkillView
+                    class={showSkill ? 'viewSkill' : ''}
+                    src={props.skill}
+                    title={props.skill}
+                    autoPlay={true}
+                    loop={true}
+                    muted={true}
+                /> : ''
+            }
+        </>
     );
 };
 

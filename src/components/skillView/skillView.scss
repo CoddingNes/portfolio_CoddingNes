@@ -1,0 +1,42 @@
+@import "../../style/variables.scss";
+
+.skills__skillView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    // height: 100%;
+    width: 100%;
+    z-index: -3;
+
+    &-view {
+        width: 100%;
+        opacity: inherit;
+        z-index: inherit;
+    }
+
+    &-title {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        margin: 3px 0;
+        color: $primary-color;
+        opacity: inherit;
+    }
+
+    &-close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        margin: 3px 0;
+        // translate: 0 -100%;
+        color: $primary-color;
+        opacity: inherit;
+    }
+
+    &.viewSkill {
+        opacity: 1;
+        z-index: 2;
+    }
+}

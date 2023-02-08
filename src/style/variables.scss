@@ -2,3 +2,4 @@ $primary-color: #613AE7;
 $secondary-color: #ffffff;
 $gradient: linear-gradient(180deg, rgba($primary-color, 0.089) 0%, rgba(255, 255, 255, 0) 100%);
 $fonts: Poppins, Arial, Helvetica, sans-serif;
+$rotation: random($limit: 30) * 1deg;

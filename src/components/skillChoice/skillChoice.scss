@@ -1,0 +1,58 @@
+@import '../../style/variables.scss';
+
+.skills__grid {
+    position: relative;
+    margin: 20px 0px 40px;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 2px;
+    grid-auto-rows: minmax(40px, auto);
+    background-color: $secondary-color;
+    z-index: 2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        height: 100%;
+        width: 100%;
+        background-color: $primary-color;
+        opacity: 0.04;
+        z-index: -1;
+    }
+
+    &-mask {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 900;
+        color: $primary-color;
+        border: outset 10px rgba($primary-color, 0.1);
+
+
+        &.desappear {
+            @keyframes desappear {
+                0% {
+                    border: inset 10px rgba($primary-color, 0.1);
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                    z-index: -1;
+                }
+            }
+
+            animation: desappear 300ms ease forwards;
+        }
+    }
+}

@@ -27,6 +27,8 @@ const Realisations = () => {
     return (
         <>
             <div className='realisations__buttons'>
+                <Button class={"realisations__buttons-button All"} title="Tout" />
+
                 {technos.map((techno, index) => (
                     <Button class={"realisations__buttons-button " + techno} title={techno} key={index} />
                 ))}

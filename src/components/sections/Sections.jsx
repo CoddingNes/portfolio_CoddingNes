@@ -1,7 +1,6 @@
 import React from 'react';
 import './sections.scss';
 
-
 const Sections = (props) => {
     return (
         <section id={props.id}>
