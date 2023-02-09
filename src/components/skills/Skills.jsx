@@ -4,26 +4,29 @@ import SkillView from '../skillView/SkillView';
 
 
 const Skills = (props) => {
-    const [showSkill, setShowSkill] = useState(false);
-    const isActive = () => setShowSkill(true);
+    const [showSkillView, setShowSkillView] = useState(false);
+    const changeView = () => {
+        setShowSkillView(true);
+        props.setSkillsAppear(false);
+    }
 
     return (
         <>
             <div
                 className={'skills__grid-item ' + props.class}
                 key={props.key}
-                onClick={isActive}>{props.skill}
+                onClick={changeView}>{props.skill}
             </div>
-            {showSkill ?
-                <SkillView
-                    class={showSkill ? 'viewSkill' : ''}
-                    src={props.skill}
-                    title={props.skill}
-                    autoPlay={true}
-                    loop={true}
-                    muted={true}
-                /> : ''
-            }
+            <SkillView
+                class={showSkillView ? 'showSkillView' : ''}
+                setShowSkillView={setShowSkillView}
+                setSkillsAppear={props.setSkillsAppear}
+                src={props.skill}
+                title={props.skill}
+                autoPlay={true}
+                loop={true}
+                muted={true}
+            />
         </>
     );
 };

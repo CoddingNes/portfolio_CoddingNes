@@ -10,6 +10,7 @@
     grid-auto-rows: minmax(40px, auto);
     background-color: $secondary-color;
     z-index: 2;
+    opacity: 1;
 
     &::before {
         content: "";
@@ -21,6 +22,10 @@
         background-color: $primary-color;
         opacity: 0.04;
         z-index: -1;
+    }
+
+    &.transparent {
+        opacity: 0;
     }
 
     &-mask {

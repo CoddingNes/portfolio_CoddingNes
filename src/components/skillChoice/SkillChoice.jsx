@@ -29,18 +29,24 @@ for (let i = 0; i < skills.length; i++) {
 
 const SkillChoice = () => {
     const [hidden, setHidden] = useState(false);
-    const hide = () => setHidden(true);
+    const [skillsAppear, setSkillsAppear] = useState(false);
+    const changeView = () => {
+        setHidden(true);
+        setSkillsAppear(true);
+    }
+
     return (
         <>
             <div className="skills__grid">
                 <div className={hidden ? 'skills__grid-mask desappear' : 'skills__grid-mask'}
-                    onClick={hide}>
+                    onClick={changeView}>
                     Découvrons-les!
                 </div>
                 {randomSkills.map((skill, index) => (
-                    <Skills class={hidden ? 'appear ' : ''}
+                    <Skills class={skillsAppear && skill !== "" ? 'appear ' : ''}
                         skill={skill}
                         key={index}
+                        setSkillsAppear={setSkillsAppear}
                     />
                 ))}
             </div>
