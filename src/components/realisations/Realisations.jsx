@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from '../button/Button';
 import Project from '../project/Project';
 import './realisations.scss';
@@ -6,36 +6,43 @@ import './realisations.scss';
 
 
 let technos = ["React", "Blender", "Three.JS", "JavaScript"];
-let realisations = [{
-    title: "Kasa - location de logements",
-    img: "Kasa.png",
-    alt: "Fiche de présentation d'un logement du site kasa",
-    link: "https://github.com/",
-    technos: ["HTML", "CSS", "React", "JS"]
-},
-{
-    title: "Kasa - location de logements",
-    img: "Kasa.png",
-    alt: "Fiche de présentation d'un logement du site kasa",
-    link: "https://github.com/",
-    technos: ["HTML", "CSS", "React", "JS"]
-}];
-
-
 
 const Realisations = () => {
+    const [filter, setFilter] = useState("Tout");
+    const [projects, setProjects] = useState([]);
+    const getData = (filter) => {
+        fetch('./data.json')
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                let projectList = [];
+                for (let i = 0; i < data.length; i++) {
+                    if (filter === "Tout" || data[i].technos.includes(filter)) {
+                        projectList.push(data[i]);
+                    }
+                }
+                setProjects(projectList);
+            })
+    };
+
+    useEffect(() => {
+        getData(filter)
+    }, [filter]);
+
+
     return (
         <>
             <div className='realisations__buttons'>
-                <Button class={"realisations__buttons-button All"} title="Tout" />
+                <Button class={"realisations__buttons-button All"} title="Tout" setFilter={setFilter} />
 
                 {technos.map((techno, index) => (
-                    <Button class={"realisations__buttons-button " + techno} title={techno} key={index} />
+                    <Button class={"realisations__buttons-button " + techno} title={techno} key={index} setFilter={setFilter} />
                 ))}
             </div>
             <div>
-                {realisations.map((projet, index) => (
-                    <Project title={projet.title} img={projet.img} alt={projet.alt} link={projet.link} key={index} />
+                {projects.map((projet, index) => (
+                    < Project title={projet.title} img={projet.img} alt={projet.alt} link={projet.link} key={index} />
                 ))}
             </div>
         </>

@@ -1,0 +1,46 @@
+[
+    {
+        "title": "HoMyFood - Réservation de menu de restaurants hauts de gamme",
+        "img": "hoMyFood.png",
+        "alt": "Menu de restaurant",
+        "link": "https://github.com/",
+        "technos": [
+            "HTML",
+            "SASS"
+        ]
+    },
+    {
+        "title": "Booki - Votre hébergement pour des vacances de rêve !",
+        "img": "booki.png",
+        "alt": "Screenshot navbarre et choix d'hébergement",
+        "link": "https://github.com/",
+        "technos": [
+            "HTML",
+            "CSS"
+        ]
+    },
+    {
+        "title": "Portfolio - Alexandra NICOLAS aka CoddingNes",
+        "img": "portfolio.png",
+        "alt": "Screenshot page d'accueil du portfolio",
+        "link": "https://github.com/",
+        "technos": [
+            "HTML",
+            "SASS",
+            "React",
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "Kasa - Location de logements",
+        "img": "Kasa.png",
+        "alt": "Fiche de présentation d'un logement du site kasa",
+        "link": "https://github.com/",
+        "technos": [
+            "HTML",
+            "CSS",
+            "React",
+            "JavaScript"
+        ]
+    }
+]

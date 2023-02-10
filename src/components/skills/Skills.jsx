@@ -14,7 +14,6 @@ const Skills = (props) => {
         <>
             <div
                 className={'skills__grid-item ' + props.class}
-                key={props.key}
                 onClick={changeView}>{props.skill}
             </div>
             <SkillView
