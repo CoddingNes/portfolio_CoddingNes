@@ -10,13 +10,14 @@ let technos = ["React", "Blender", "Three.JS", "JavaScript"];
 const Realisations = () => {
     const [filter, setFilter] = useState("Tout");
     const [projects, setProjects] = useState([]);
+
     const getData = (filter) => {
         fetch('./data.json')
             .then(response => {
                 return response.json();
             })
             .then(data => {
-                let projectList = [];
+                const projectList = [];
                 for (let i = 0; i < data.length; i++) {
                     if (filter === "Tout" || data[i].technos.includes(filter)) {
                         projectList.push(data[i]);

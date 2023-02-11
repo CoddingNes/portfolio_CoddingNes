@@ -29,14 +29,4 @@
         border: 4px outset $gradient;
         z-index: 3;
     }
-
-    &__nav-bar {
-        position: fixed;
-        top: 20px;
-        right: -100px;
-    }
-
-    &__nav-bar .display {
-        transform: translate(-100%, 0);
-    }
 }

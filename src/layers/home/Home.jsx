@@ -1,33 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import header_background from "./Switched_pitting_usb_key_text4_whiteback.png";
 import './home.scss';
+import Navbar from '../../components/navbar/Navbar';
 
 const Home = () => {
+    const [showNav, setShowNav] = useState(false);
+
     return (
         <header id="home">
             <h1 className="home__title">Alexandra <br />Développeuse Web</h1>
             <img className="home__banner" src={header_background}
                 alt="Clé USB 3D libérant des logos relatifs au développement" />
-            <button className="home__menu-button"><i className="fa-solid fa-bars"></i></button>
-            <nav className="home__nav-bar">
-                <ul>
-                    <li className="home__nav-bar__nav">
-                        <a href="#home">Accueil</a>
-                    </li>
-                    <li className="home__nav-bar__nav">
-                        <a href="#presentation">Présentation</a>
-                    </li>
-                    <li className="home__nav-bar__nav">
-                        <a href="#skills">Compétences</a>
-                    </li>
-                    <li className="home__nav-bar__nav">
-                        <a href="#realisations">Réalisations</a>
-                    </li>
-                    <li className="home__nav-bar__nav">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            {showNav ?
+                <Navbar showNav={showNav} setShowNav={setShowNav} /> :
+                <button className="home__menu-button" aria-label='Menu' onClick={() => { setShowNav(true) }}>
+                    <i className="fa-solid fa-bars"></i>
+                </button>
+            }
+
+
         </header>
     );
 };

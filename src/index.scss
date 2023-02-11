@@ -3,7 +3,7 @@
 @import "./style/variables.scss";
 
 a {
-    color: black;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -15,4 +15,6 @@ body {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }

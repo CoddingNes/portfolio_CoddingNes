@@ -1,0 +1,40 @@
+@import "../../style/variables.scss";
+
+.home {
+    &__nav-bar {
+        position: fixed;
+        top: 20px;
+        right: 0;
+        padding: 5px 10px;
+        z-index: 3;
+        background-color: white;
+
+        @keyframes translate {
+            0% {
+                translate: 100% 0;
+            }
+
+            100% {
+                translate: 0 0;
+            }
+        }
+
+        animation: translate 300ms ease-out forwards;
+
+        &__nav {
+            font-weight: 700;
+            padding: 5px 0;
+        }
+
+        &__close {
+            position: absolute;
+            top: 0;
+            left: 0;
+            translate: -50% -50%;
+            background-color: white;
+            font-size: 18px;
+        }
+
+    }
+
+}
