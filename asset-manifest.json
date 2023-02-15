@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio_CoddingNes/static/css/main.4c605543.css",
+    "main.css": "/portfolio_CoddingNes/static/css/main.3fe04e81.css",
     "main.js": "/portfolio_CoddingNes/static/js/main.7426f5e1.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio_CoddingNes/static/js/787.aeca62f9.chunk.js",
     "static/media/Switched_pitting_usb_key_text4_whiteback.png": "/portfolio_CoddingNes/static/media/Switched_pitting_usb_key_text4_whiteback.83da338e25e245a2e249.png",
     "static/media/Background_white.png": "/portfolio_CoddingNes/static/media/Background_white.1843c2333c223eeff586.png",
     "static/media/email_img.png": "/portfolio_CoddingNes/static/media/email_img.464c6df5bc243035eab5.png",
     "index.html": "/portfolio_CoddingNes/index.html",
-    "main.4c605543.css.map": "/portfolio_CoddingNes/static/css/main.4c605543.css.map",
+    "main.3fe04e81.css.map": "/portfolio_CoddingNes/static/css/main.3fe04e81.css.map",
     "main.7426f5e1.js.map": "/portfolio_CoddingNes/static/js/main.7426f5e1.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio_CoddingNes/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c605543.css",
+    "static/css/main.3fe04e81.css",
     "static/js/main.7426f5e1.js"
   ]
 }
