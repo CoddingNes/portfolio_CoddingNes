@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.scss';
 
 const Navbar = (props) => {
+    const [hide, setHide] = useState(false)
+    const closeNavbar = () => {
+        setHide(true);
+        setTimeout(() => {
+            props.setShowNav(false);
+            setHide(false);
+        },
+            300);
+    }
+
     return (
-        <nav className="home__nav-bar">
-            <i className="home__nav-bar__close fa-regular fa-rectangle-xmark" onClick={() => props.setShowNav(false)}></i>
+        <nav className={hide ? "home__nav-bar hide" : "home__nav-bar"}>
+            <i className="home__nav-bar__close fa-solid fa-xmark"
+                onClick={closeNavbar}>
+            </i>
             <ul>
                 <li className="home__nav-bar__nav">
                     <a href="#home" >Accueil</a>
@@ -22,7 +34,7 @@ const Navbar = (props) => {
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
-        </nav>
+        </nav >
     );
 };
 

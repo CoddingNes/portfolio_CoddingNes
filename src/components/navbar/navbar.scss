@@ -8,10 +8,12 @@
         padding: 5px 10px;
         z-index: 3;
         background-color: white;
+        border: solid $primary-color 1px;
+        border-radius: 0 0 0 10px;
 
         @keyframes translate {
             0% {
-                translate: 100% 0;
+                translate: 110% 0;
             }
 
             100% {
@@ -20,6 +22,20 @@
         }
 
         animation: translate 300ms ease-out forwards;
+
+        &.hide {
+            @keyframes hide {
+                0% {
+                    translate: 0 0;
+                }
+
+                100% {
+                    translate: 110% 0;
+                }
+            }
+
+            animation: hide 300ms ease-out forwards;
+        }
 
         &__nav {
             font-weight: 700;
@@ -30,11 +46,31 @@
             position: absolute;
             top: 0;
             left: 0;
-            translate: -50% -50%;
+            translate: -40% -40%;
+            padding: 3px 7px;
             background-color: white;
+            border-radius: 50%;
             font-size: 18px;
+            z-index: 4;
+            border: solid $primary-color 1px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 40%;
+                right: -2px;
+                top: 38%;
+                bottom: -2px;
+                z-index: -1;
+                border: solid white 8px;
+                // border-right: solid red 3px;
+                // border-bottom: solid white 3px;
+            }
         }
 
+        & ul {
+            padding-top: 2px;
+        }
     }
 
 }

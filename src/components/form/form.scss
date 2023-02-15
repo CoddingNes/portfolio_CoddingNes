@@ -23,8 +23,8 @@ label {
 .form {
 
     &__message,
-    &__name,
-    &__email {
+    &__user-name,
+    &__user-email {
         display: flex;
         align-items: center;
         width: 100%;
@@ -38,5 +38,31 @@ label {
         margin-bottom: 20px;
         align-items: flex-start;
         position: relative;
+    }
+}
+
+.form__send-button {
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    width: fit-content;
+    bottom: 0;
+    right: 0;
+    translate: -10px -10px;
+    margin: 0;
+
+    &.button-primaryColor {
+        border: $primary-color solid 1px;
+        background: linear-gradient(150deg, rgba($primary-color, 0.2665441176470589) 68%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 78%, rgba(97, 58, 231, 0.23012955182072825) 85%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 1) 91%, rgba(97, 58, 231, 0.23012955182072825) 95%);
+
+        &:hover {
+            background: linear-gradient(150deg, rgba($primary-color, 0.49) 68%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 78%, rgba(97, 58, 231, 0.49) 85%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 1) 91%, rgba(97, 58, 231, 0.49) 95%);
+        }
+
+        &:active {
+            background: rgba($primary-color, 0.49);
+        }
+
     }
 }
