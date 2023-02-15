@@ -1,9 +1,39 @@
 @import '../../style/variables.scss';
 
+.contact {
+
+    @media screen and (max-width: 767px) {
+        &__img {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &__img {
+            width: 200px;
+            margin: auto;
+        }
+    }
+}
+
+
+
 form {
     margin: auto;
     color: $primary-color;
     font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+        margin: 0;
+        font-size: 14px;
+        width: 50%;
+    }
+
 }
 
 input,
@@ -20,7 +50,7 @@ label {
     white-space: nowrap;
 }
 
-.form {
+.contact__form {
 
     &__message,
     &__user-name,
@@ -41,7 +71,7 @@ label {
     }
 }
 
-.form__send-button {
+.contact__form__send-button {
     font-weight: 600;
     padding: 5px 10px;
     border-radius: 5px;

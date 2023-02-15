@@ -1,6 +1,21 @@
 @import '../../style/variables.scss';
 
-.presentation__link {
-    font-weight: 700;
-    color: $primary-color;
+.presentation {
+    @media screen and (min-width: 768px) {
+
+        &__content {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__link {
+        font-weight: 700;
+        color: $primary-color;
+    }
+}
+
+#presentation p {
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }

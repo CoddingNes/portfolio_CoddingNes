@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import Input from '../input/Input';
 import Textarea from '../textarea/Textarea';
 import emailjs from '@emailjs/browser';
+import emailImg from './email_img.png';
 import './form.scss';
 
 
@@ -30,11 +31,14 @@ const Form = () => {
     }
 
     return (
-        <form className='form' ref={form} onSubmit={sendEmail}>
-            <Input title="user-name" label="Nom :" type="text" />
-            <Input title="user-email" label="Email :" type="email" />
-            <Textarea title="message" label="Message :" />
-        </form>
+        <div className='contact'>
+            <form className='contact__form' ref={form} onSubmit={sendEmail}>
+                <Input title="user-name" label="Nom :" type="text" />
+                <Input title="user-email" label="Email :" type="email" />
+                <Textarea title="message" label="Message :" />
+            </form>
+            <img className='contact__img' src={emailImg} alt="enveloppe contennat un symbol d'email" />
+        </div>
     );
 };
 

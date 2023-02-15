@@ -3,7 +3,7 @@ import './project.scss';
 
 const Project = (props) => {
     return (
-        <a href={props.link}>
+        <a className='projet' href={props.link}>
             <article className='hover'>
                 <figure>
                     <img src={props.img}

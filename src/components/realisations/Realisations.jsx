@@ -41,7 +41,13 @@ const Realisations = () => {
                     <Button class={"realisations__buttons-button " + techno} title={techno} key={index} setFilter={setFilter} />
                 ))}
             </div>
-            <div>
+            {/* <div className='realisations__project-list'>
+                < Project title='HotTakes - Avis gastronomique sauces piquantes' alt='Accueil de HotTakes' link='https://github.com/CoddingNes/OCP6' />
+                < Project title='HotTakes - Avis gastronomique sauces piquantes' alt='Accueil de HotTakes' link='https://github.com/CoddingNes/OCP6' />
+                < Project title='HotTakes - Avis gastronomique sauces piquantes' alt='Accueil de HotTakes' link='https://github.com/CoddingNes/OCP6' />
+                < Project title='HotTakes - Avis gastronomique sauces piquantes' alt='Accueil de HotTakes' link='https://github.com/CoddingNes/OCP6' />
+            </div> */}
+            <div className='realisations__project-list'>
                 {projects.map((projet, index) => (
                     < Project title={projet.title} img={projet.img} alt={projet.alt} link={projet.link} key={index} />
                 ))}

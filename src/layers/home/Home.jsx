@@ -12,7 +12,6 @@ const Home = () => {
             <img className="home__banner" src={header_background}
                 alt="Clé USB 3D libérant des logos relatifs au développement" />
             {showNav ?
-
                 <Navbar showNav={showNav} setShowNav={setShowNav} /> :
                 <button className="home__menu-button" aria-label='Menu' onClick={() => { setShowNav(true) }}>
                     <i className="fa-solid fa-bars"></i>
