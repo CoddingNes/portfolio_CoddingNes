@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio_CoddingNes/static/css/main.14e76c8f.css",
+    "main.css": "/portfolio_CoddingNes/static/css/main.db17a6a8.css",
     "main.js": "/portfolio_CoddingNes/static/js/main.48f894aa.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio_CoddingNes/static/js/787.aeca62f9.chunk.js",
     "static/media/Switched_pitting_usb_key_text4_whiteback.png": "/portfolio_CoddingNes/static/media/Switched_pitting_usb_key_text4_whiteback.83da338e25e245a2e249.png",
@@ -8,12 +8,12 @@
     "static/media/hotTakes.png": "/portfolio_CoddingNes/static/media/hotTakes.9432838e96aaec945f7d.png",
     "static/media/email_img.png": "/portfolio_CoddingNes/static/media/email_img.464c6df5bc243035eab5.png",
     "index.html": "/portfolio_CoddingNes/index.html",
-    "main.14e76c8f.css.map": "/portfolio_CoddingNes/static/css/main.14e76c8f.css.map",
+    "main.db17a6a8.css.map": "/portfolio_CoddingNes/static/css/main.db17a6a8.css.map",
     "main.48f894aa.js.map": "/portfolio_CoddingNes/static/js/main.48f894aa.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio_CoddingNes/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14e76c8f.css",
+    "static/css/main.db17a6a8.css",
     "static/js/main.48f894aa.js"
   ]
 }
