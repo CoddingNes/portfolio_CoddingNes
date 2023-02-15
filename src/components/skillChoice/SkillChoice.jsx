@@ -4,7 +4,7 @@ import './skillChoice.scss';
 // import Blender from './blender.webm';
 import Skills from '../skills/Skills';
 
-const skills = ["HTML", "CSS", "React.JS", "Three.JS", "Blender", "", "", "", "", "", ""];
+const skills = ["HTML", "CSS", "React.JS", "Three.JS", "Blender"];
 
 
 let getRandomInt = (max) => {
@@ -26,6 +26,8 @@ for (let i = 0; i < skills.length; i++) {
     }
 }
 
+console.log(randomSkills);
+
 
 const SkillChoice = () => {
     const [hidden, setHidden] = useState(false);
@@ -43,7 +45,10 @@ const SkillChoice = () => {
                     Découvrons-les!
                 </div>
                 {randomSkills.map((skill, index) => (
-                    <Skills class={skillsAppear && skill !== "" ? 'appear ' : ''}
+                    <Skills
+                        // class='appear '
+
+                        class={skillsAppear && skill !== "" ? 'appear ' : ''}
                         skill={skill}
                         key={index}
                         setSkillsAppear={setSkillsAppear}

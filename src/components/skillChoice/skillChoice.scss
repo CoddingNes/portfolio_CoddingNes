@@ -8,7 +8,6 @@
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 2px;
     grid-auto-rows: minmax(40px, auto);
-    height: 40vw;
     background-color: $secondary-color;
     z-index: 2;
     opacity: 1;
@@ -63,6 +62,6 @@
     }
 
     @media screen and (min-width: 768px) {
-        // height: ;
+        height: 35vw;
     }
 }
