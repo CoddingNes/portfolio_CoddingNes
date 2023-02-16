@@ -1,84 +1,84 @@
 [
-    {
-        "title": "Gameboy - Exercice création/intégration 3D",
-        "img": "gameboy.png",
-        "alt": "Gameboy affichée en 3D",
-        "link": "",
-        "technos": [
-            "Blender",
-            "Three.JS"
-        ]
-    },
-    {
-        "title": "HotTakes - Avis gastronomique sauces piquantes",
-        "img": "hotTakes.png",
-        "alt": "Accueil de HotTakes",
-        "link": "",
-        "technos": [
-            "JavaScript",
-            "Express",
-            "MongoDB"
-        ]
-    },
-    {
-        "title": "Kanap - Site e-commerce de canapés",
-        "img": "kanap.png",
-        "alt": "Accueil de kanap",
-        "link": "",
-        "technos": [
-            "JavaScript"
-        ]
-    },
-    {
-        "title": "La Panthère - Optimisation d'un site existant",
-        "img": "laPanthere.png",
-        "alt": "Accueil du site la Panthère",
-        "link": "",
-        "technos": [
-            "HTML",
-            "CSS"
-        ]
-    },
-    {
-        "title": "HoMyFood - Réservation de menus en ligne",
-        "img": "hoMyFood.png",
-        "alt": "Menu de restaurant",
-        "link": "",
-        "technos": [
-            "HTML",
-            "SASS"
-        ]
-    },
-    {
-        "title": "Booki - Choix d'hébergement pour vacances",
-        "img": "booki.png",
-        "alt": "Screenshot navbarre et choix d'hébergement",
-        "link": "",
-        "technos": [
-            "HTML",
-            "CSS"
-        ]
-    },
-    {
-        "title": "Portfolio - Alexandra aka CoddingNes",
-        "img": "portfolio.png",
-        "alt": "Screenshot page d'accueil du portfolio",
-        "link": "",
-        "technos": [
-            "SASS",
-            "React",
-            "JavaScript"
-        ]
-    },
-    {
-        "title": "Kasa - Location de logements",
-        "img": "Kasa.png",
-        "alt": "Fiche de présentation d'un logement du site kasa",
-        "link": "",
-        "technos": [
-            "SASS",
-            "React",
-            "JavaScript"
-        ]
-    }
+  {
+    "title": "Gameboy - Exercice création/intégration 3D",
+    "img": "gameboy.png",
+    "alt": "Gameboy affichée en 3D",
+    "link": "",
+    "technos": [
+      "Blender",
+      "Three.JS"
+    ]
+  },
+  {
+    "title": "HotTakes - Avis gastronomique sauces piquantes",
+    "img": "hotTakes.png",
+    "alt": "Accueil de HotTakes",
+    "link": "",
+    "technos": [
+      "JavaScript",
+      "Express",
+      "MongoDB"
+    ]
+  },
+  {
+    "title": "Kanap - Site e-commerce de canapés",
+    "img": "kanap.png",
+    "alt": "Accueil de kanap",
+    "link": "",
+    "technos": [
+      "JavaScript"
+    ]
+  },
+  {
+    "title": "La Panthère - Optimisation d'un site existant",
+    "img": "laPanthere.png",
+    "alt": "Accueil du site la Panthère",
+    "link": "",
+    "technos": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "title": "HoMyFood - Réservation de menus en ligne",
+    "img": "hoMyFood.png",
+    "alt": "Menu de restaurant",
+    "link": "",
+    "technos": [
+      "HTML",
+      "SASS"
+    ]
+  },
+  {
+    "title": "Booki - Choix d'hébergement pour vacances",
+    "img": "booki.png",
+    "alt": "Screenshot navbarre et choix d'hébergement",
+    "link": "",
+    "technos": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "title": "Portfolio - Alexandra aka CoddingNes",
+    "img": "portfolio.png",
+    "alt": "Screenshot page d'accueil du portfolio",
+    "link": "",
+    "technos": [
+      "SASS",
+      "React",
+      "JavaScript"
+    ]
+  },
+  {
+    "title": "Kasa - Location de logements",
+    "img": "Kasa.png",
+    "alt": "Fiche de présentation d'un logement du site kasa",
+    "link": "",
+    "technos": [
+      "SASS",
+      "React",
+      "JavaScript"
+    ]
+  }
 ]
