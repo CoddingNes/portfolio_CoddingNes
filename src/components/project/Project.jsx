@@ -6,8 +6,8 @@ const Project = (props) => {
         <a className='projet' href={props.link}>
             <article className='hover'>
                 <figure>
-                    <img src={props.img}
-                        alt={props.alt} />
+                    <img src={'./' + props.img}
+                        alt={props.alt} crossorigin="anonymous" />
                     <figcaption>
                         <h3>{props.title}</h3>
                     </figcaption>

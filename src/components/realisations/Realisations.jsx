@@ -12,7 +12,12 @@ const Realisations = () => {
     const [projects, setProjects] = useState([]);
 
     const getData = (filter) => {
-        fetch('./data.json')
+        fetch('data.json', {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
             .then(response => {
                 return response.json();
             })
@@ -31,6 +36,7 @@ const Realisations = () => {
         getData(filter)
     }, [filter]);
 
+    //  react-uuid
 
     return (
         <>
@@ -49,7 +55,7 @@ const Realisations = () => {
             </div> */}
             <div className='realisations__project-list'>
                 {projects.map((projet, index) => (
-                    < Project title={projet.title} img={projet.img} alt={projet.alt} link={projet.link} key={index} />
+                    <Project title={projet.title} img={projet.img} alt={projet.alt} link={projet.link} key={index} />
                 ))}
             </div>
         </>
