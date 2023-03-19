@@ -3,10 +3,13 @@
 .home {
     &__nav-bar {
         background-color: white;
-        border: solid $primary-color 1px;
-        border-left: 0;
-        border-right: 0;
+        border: solid rgba($primary-color, 0.5) 1px;
         z-index: 3;
+
+        & a:hover {
+            font-weight: 800;
+            font-size: 110%;
+        }
 
         @media screen and (max-width: 767px) {
             position: fixed;
@@ -77,6 +80,10 @@
 
         @media screen and (min-width: 768px) {
             width: 100%;
+            border: solid rgba($primary-color, 0.5);
+            border-left: 0;
+            border-right: 0;
+            padding: 5px 0;
 
             &.sticky {
                 position: fixed;
@@ -85,16 +92,16 @@
                 right: 0;
                 // border: none;
 
-                @keyframes changeNavbar {
-                    100% {
-                        border: solid rgba($primary-color, 0.5) 5px;
-                        border-left: 0;
-                        border-right: 0;
-                        padding: 5px 0;
-                    }
-                }
+                // @keyframes changeNavbar {
+                //     100% {
+                //         border: solid rgba($primary-color, 0.5) 5px;
+                //         border-left: 0;
+                //         border-right: 0;
+                //         padding: 5px 0;
+                //     }
+                // }
 
-                animation : changeNavbar 0.2s ease-in forwards;
+                // animation : changeNavbar 0.2s ease-in forwards;
             }
 
             & ul {

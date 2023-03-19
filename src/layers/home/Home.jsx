@@ -1,10 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import header_background from "./Switched_pitting_usb_key_text4_whiteback.png";
 import './home.scss';
 import Navbar from '../../components/navbar/Navbar';
 
 const Home = () => {
     const [showNav, setShowNav] = useState(false);
+
+    const setNavbarDisplay = () => {
+        if (window.innerWidth >= 768) {
+            setShowNav(true)
+        } else {
+            setShowNav(false)
+        }
+    }
+
+    useEffect(() => {
+        setNavbarDisplay()
+    }, [])
+
+    window.addEventListener('resize', setNavbarDisplay)
 
     return (
         <header id="home" className={showNav ? 'shadow' : ''}>
