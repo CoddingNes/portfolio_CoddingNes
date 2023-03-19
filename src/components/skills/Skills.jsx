@@ -14,7 +14,8 @@ const Skills = (props) => {
         <>
             <div
                 className={'skills__grid-item ' + props.class}
-                onClick={changeView}>{props.skill}
+                onClick={changeView}>
+                <button className='button-primaryColor'>{props.skill}</button>
             </div>
             <SkillView
                 class={showSkillView ? 'showSkillView' : ''}

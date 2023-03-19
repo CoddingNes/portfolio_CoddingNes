@@ -4,6 +4,8 @@
     &__nav-bar {
         background-color: white;
         border: solid $primary-color 1px;
+        border-left: 0;
+        border-right: 0;
         z-index: 3;
 
         @media screen and (max-width: 767px) {
@@ -75,10 +77,25 @@
 
         @media screen and (min-width: 768px) {
             width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+
+            &.sticky {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                // border: none;
+
+                @keyframes changeNavbar {
+                    100% {
+                        border: solid rgba($primary-color, 0.5) 5px;
+                        border-left: 0;
+                        border-right: 0;
+                        padding: 5px 0;
+                    }
+                }
+
+                animation : changeNavbar 0.2s ease-in forwards;
+            }
 
             & ul {
                 display: flex;
@@ -88,10 +105,7 @@
             }
 
             &__close {
-                position: absolute;
-                top: 5px;
-                left: 10px;
-                width: 10px;
+                display: none;
             }
         }
 

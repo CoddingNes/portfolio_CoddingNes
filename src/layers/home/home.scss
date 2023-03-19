@@ -1,9 +1,11 @@
 @import '../../style/variables.scss';
 
 #home {
+    display: flex;
+    flex-direction: column;
+
     @media screen and (max-width: 767px) {
-        display: flex;
-        /* justify-content: center; */
+        flex-direction: row;
         height: 40vw;
 
         &.shadow::before {
