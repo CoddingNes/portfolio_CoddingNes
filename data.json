@@ -1,5 +1,16 @@
 [
   {
+    "title": "Portfolio - Alexandra aka CoddingNes",
+    "img": "portfolio.png",
+    "alt": "Screenshot page d'accueil du portfolio",
+    "link": "",
+    "technos": [
+      "SASS",
+      "React",
+      "JavaScript"
+    ]
+  },
+  {
     "title": "Gameboy - Exercice création/intégration 3D",
     "img": "gameboy.png",
     "alt": "Gameboy affichée en 3D",
@@ -7,6 +18,17 @@
     "technos": [
       "Blender",
       "Three.JS"
+    ]
+  },
+  {
+    "title": "Kasa - Location de logements",
+    "img": "Kasa.png",
+    "alt": "Fiche de présentation d'un logement du site kasa",
+    "link": "",
+    "technos": [
+      "SASS",
+      "React",
+      "JavaScript"
     ]
   },
   {
@@ -57,28 +79,6 @@
     "technos": [
       "HTML",
       "CSS"
-    ]
-  },
-  {
-    "title": "Portfolio - Alexandra aka CoddingNes",
-    "img": "portfolio.png",
-    "alt": "Screenshot page d'accueil du portfolio",
-    "link": "",
-    "technos": [
-      "SASS",
-      "React",
-      "JavaScript"
-    ]
-  },
-  {
-    "title": "Kasa - Location de logements",
-    "img": "Kasa.png",
-    "alt": "Fiche de présentation d'un logement du site kasa",
-    "link": "",
-    "technos": [
-      "SASS",
-      "React",
-      "JavaScript"
     ]
   }
 ]
