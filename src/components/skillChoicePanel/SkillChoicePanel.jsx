@@ -4,7 +4,7 @@ import './skillChoicePanel.scss';
 // import Blender from './blender.webm';
 import Skills from '../skills/Skills';
 
-const skills = ["HTML", "CSS", "React.JS", "Three.JS", "Blender", "", "", "", "", "", ""];
+const skills = ["HTML", "CSS", "React", "Three.JS", "Blender", "", "", "", "", "", ""];
 
 
 const getRandomInt = (max) => {

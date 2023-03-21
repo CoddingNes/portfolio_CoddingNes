@@ -3,9 +3,9 @@
     "title": "Portfolio - Alexandra aka CoddingNes",
     "img": "portfolio.png",
     "alt": "Screenshot page d'accueil du portfolio",
-    "link": "",
+    "link": "https://coddingnes-dev.fr/Alexandra_Nicolas/",
     "technos": [
-      "SASS",
+      "Sass",
       "React",
       "JavaScript"
     ]
@@ -14,7 +14,7 @@
     "title": "Gameboy - Exercice création/intégration 3D",
     "img": "gameboy.png",
     "alt": "Gameboy affichée en 3D",
-    "link": "",
+    "link": "https://coddingnes-dev.fr/gameboy_3d/",
     "technos": [
       "Blender",
       "Three.JS"
@@ -24,9 +24,9 @@
     "title": "Kasa - Location de logements",
     "img": "Kasa.png",
     "alt": "Fiche de présentation d'un logement du site kasa",
-    "link": "",
+    "link": "https://coddingnes-dev.fr/kasa/",
     "technos": [
-      "SASS",
+      "Sass",
       "React",
       "JavaScript"
     ]
@@ -65,17 +65,17 @@
     "title": "HoMyFood - Réservation de menus en ligne",
     "img": "hoMyFood.png",
     "alt": "Menu de restaurant",
-    "link": "",
+    "link": "https://coddingnes-dev.fr/ohmyfood/",
     "technos": [
       "HTML",
-      "SASS"
+      "Sass"
     ]
   },
   {
     "title": "Booki - Choix d'hébergement pour vacances",
     "img": "booki.png",
     "alt": "Screenshot navbarre et choix d'hébergement",
-    "link": "",
+    "link": "https://coddingnes-dev.fr/booki/",
     "technos": [
       "HTML",
       "CSS"

@@ -7,7 +7,7 @@ const Project = (props) => {
             <article className='hover'>
                 <figure>
                     <img src={'./' + props.img}
-                        alt={props.alt} crossorigin="anonymous" />
+                        alt={props.alt} crossOrigin="anonymous" />
                     <figcaption>
                         <h3>{props.title}</h3>
                     </figcaption>

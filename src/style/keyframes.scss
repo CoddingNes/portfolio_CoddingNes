@@ -1,0 +1,14 @@
+@keyframes scaleUp {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        scale: 1.0;
+    }
+}
