@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-// import SkillView from '../skillView/SkillView';
+import React, { useEffect, useState } from 'react';
 import './skillChoicePanel.scss';
-// import Blender from './blender.webm';
 import Skills from '../skills/Skills';
 
 const skills = ["HTML", "CSS", "React", "Three.JS", "Blender", "", "", "", "", "", ""];
@@ -16,6 +14,9 @@ let usedInt = [];
 let randomInt = 0;
 
 const createRandomList = () => {
+    randomSkills = [];
+    usedInt = [];
+    randomInt = 0;
     for (let i = 0; i < skills.length; i++) {
         randomInt = getRandomInt(skills.length)
         if (usedInt.includes(randomInt)) {
@@ -26,10 +27,8 @@ const createRandomList = () => {
             usedInt.push(randomInt);
         }
     }
+    console.log("create a random list");
 }
-
-createRandomList()
-
 
 const SkillChoicePanel = () => {
     const [hidden, setHidden] = useState(false);
@@ -38,6 +37,13 @@ const SkillChoicePanel = () => {
         setHidden(true);
         setSkillsAppear(true);
     }
+
+    useEffect(() => {
+        if (!skillsAppear) {
+            console.log("create a random list");
+            createRandomList()
+        }
+    }, [window, skillsAppear])
 
     return (
         <>
@@ -48,8 +54,6 @@ const SkillChoicePanel = () => {
                 </div>
                 {randomSkills.map((skill, index) => (
                     <Skills
-                        // class={'n' + index + ' appear '}
-
                         class={'n' + index + (skillsAppear && skill !== "" ? ' appear ' : '')}
                         skill={skill}
                         key={index}
