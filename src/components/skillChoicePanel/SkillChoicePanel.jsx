@@ -42,8 +42,7 @@ const SkillChoicePanel = () => {
     }
 
     useEffect(() => {
-        if (!skillsAppear) {
-            console.log("create a random list");
+        if (!skillsAppear && window.innerWidth < 426) {
             createRandomList()
         }
     }, [skillsAppear])
@@ -51,18 +50,20 @@ const SkillChoicePanel = () => {
     return (
         <>
             <div className="skills__grid">
-                <div className={hidden ? 'skills__grid-mask desappear' : 'skills__grid-mask'}
-                    onClick={changeView}>
-                    Découvrons-les!
-                </div>
-                {randomSkills.map((skill, index) => (skill ? (<Skills
+                {hidden ? "" :
+                    <div className='skills__grid-mask'
+                        onClick={changeView}>
+                        Découvrons-les!
+                    </div>
+                }
+                {hidden ? randomSkills.map((skill, index) => (skill ? (<Skills
                     class={'n' + index + (skillsAppear ? ' appear ' : '')}
                     skill={skill}
                     key={index}
                     setSkillsAppear={setSkillsAppear}
                 />)
                     : "")
-                )}
+                ) : ""}
             </div>
         </>
     );

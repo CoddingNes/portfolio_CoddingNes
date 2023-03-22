@@ -15,7 +15,7 @@
         height: 100%;
         opacity: inherit;
         z-index: inherit;
-        transition: opacity 200ms 700ms;
+        transition: opacity 200ms 500ms;
     }
 
     &-title {
@@ -25,7 +25,7 @@
         margin: 3px 0;
         color: $primary-color;
         opacity: inherit;
-        transition: opacity 200ms 800ms;
+        transition: opacity 200ms 600ms;
     }
 
     &-close {
@@ -33,10 +33,13 @@
         top: 5px;
         right: 5px;
         margin: 3px 0;
+        padding: 1px;
         color: $primary-color;
+        // background-color: $secondary-color;
         opacity: inherit;
         font-size: 25px;
-        transition: opacity 200ms 800ms;
+        z-index: inherit;
+        transition: opacity 200ms 600ms;
     }
 
     &.showSkillView {
@@ -62,11 +65,8 @@
                     z-index: 1;
                 }
 
-                50% {
-                    opacity: 1;
-                }
-
                 80% {
+                    opacity: 1;
                     scale: 1;
                     border-radius: 0%;
                     background-color: $primary-color;
@@ -81,7 +81,7 @@
                 }
             }
 
-            animation: appear 1200ms cubic-bezier(.29, 1.02, .83, 1) 0ms forwards;
+            animation: appear 1000ms cubic-bezier(.29, 1.02, .83, 1) 0ms forwards;
         }
     }
 }

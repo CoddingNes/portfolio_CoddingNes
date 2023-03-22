@@ -18,6 +18,7 @@ const Skills = (props) => {
                 <button className='button-primaryColor'>{props.skill}</button>
                 <div className='effect'></div>
             </div>
+            {/* {showSkillView ? */}
             <SkillView
                 class={'skillView ' + (showSkillView ? 'showSkillView' : '')}
                 setShowSkillView={setShowSkillView}
@@ -28,21 +29,7 @@ const Skills = (props) => {
                 loop={true}
                 muted={true}
             />
-            {/* <div
-                className={'skills__grid-item ' + props.class}
-                onClick={changeView}>
-                <button className='button-primaryColor'>{props.skill}</button>
-            </div>
-            <SkillView
-                class={'skillView ' + (showSkillView ? 'showSkillView' : '')}
-                setShowSkillView={setShowSkillView}
-                setSkillsAppear={props.setSkillsAppear}
-                src={props.skill}
-                title={props.skill}
-                autoPlay={true}
-                loop={true}
-                muted={true}
-            /> */}
+            {/* : ""} */}
         </>
     );
 };
