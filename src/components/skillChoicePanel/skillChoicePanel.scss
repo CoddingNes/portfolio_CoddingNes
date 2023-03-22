@@ -2,13 +2,12 @@
 
 .skills__grid {
     position: relative;
-    margin: 20px 0px 40px;
-    padding: 25px 25px 25px 20px;
+    margin: 20px auto 25px;
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 2px;
-    grid-auto-rows: minmax(40px, auto);
-    // background-color: $secondary-color;
+    grid-template-columns: 17vw 17vw 17vw 17vw;
+    grid-auto-rows: minmax(15vw, auto);
+    width: 70vw;
     background-color: rgba($primary-color, 0.04);
     z-index: 2;
     opacity: 1;
@@ -61,23 +60,29 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
-        height: 35vw;
-        width: 10vw;
+    @media screen and (min-width: 426px) {
+        height: 270px;
+        width: 70vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color: rgba(aqua, 0.5);
+        align-items: left;
+        margin: 25px auto 50px;
+        // background-color: rgba(aqua, 0.5);
 
         &::before {
-            content: "Choisissez une compétence";
+            content: "";
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            padding: 0px;
             position: absolute;
             top: 0;
-            left: 100%;
+            left: 0;
             height: 100%;
-            width: 70vw;
+            width: 100%;
             background-color: white;
-            opacity: 0.04;
+            opacity: 0;
             z-index: -1;
         }
 

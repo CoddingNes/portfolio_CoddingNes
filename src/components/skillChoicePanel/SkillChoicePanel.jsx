@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './skillChoicePanel.scss';
+import '../skills/skills.scss';
 import Skills from '../skills/Skills';
 
-const skills = ["HTML", "CSS", "React", "Three.JS", "Blender", "", "", "", "", "", ""];
+const skills = ["HTML", "CSS", "React", "Three.JS", "Blender"];
 
 
 const getRandomInt = (max) => {
@@ -17,8 +18,8 @@ const createRandomList = () => {
     randomSkills = [];
     usedInt = [];
     randomInt = 0;
-    for (let i = 0; i < skills.length; i++) {
-        randomInt = getRandomInt(skills.length)
+    for (let i = 0; i < 16; i++) {
+        randomInt = getRandomInt(16)
         if (usedInt.includes(randomInt)) {
             randomInt = getRandomInt(skills.length);
             i--;
@@ -27,8 +28,10 @@ const createRandomList = () => {
             usedInt.push(randomInt);
         }
     }
-    console.log("create a random list");
+    console.log(randomSkills);
 }
+
+createRandomList()
 
 const SkillChoicePanel = () => {
     const [hidden, setHidden] = useState(false);
@@ -43,7 +46,7 @@ const SkillChoicePanel = () => {
             console.log("create a random list");
             createRandomList()
         }
-    }, [window, skillsAppear])
+    }, [skillsAppear])
 
     return (
         <>
@@ -52,14 +55,14 @@ const SkillChoicePanel = () => {
                     onClick={changeView}>
                     Découvrons-les!
                 </div>
-                {randomSkills.map((skill, index) => (
-                    <Skills
-                        class={'n' + index + (skillsAppear && skill !== "" ? ' appear ' : '')}
-                        skill={skill}
-                        key={index}
-                        setSkillsAppear={setSkillsAppear}
-                    />
-                ))}
+                {randomSkills.map((skill, index) => (skill ? (<Skills
+                    class={'n' + index + (skillsAppear ? ' appear ' : '')}
+                    skill={skill}
+                    key={index}
+                    setSkillsAppear={setSkillsAppear}
+                />)
+                    : "")
+                )}
             </div>
         </>
     );

@@ -1,11 +1,12 @@
 @import '../../style/variables.scss';
 @import '../../style/keyframes.scss';
 
+
 .skills__grid {
 
     &-item {
-        background-color: rgb(0, 255, 255, 0.4);
-        border: solid 2px aqua;
+        // background-color: rgb(0, 255, 255, 0.4);
+        // border: solid 2px aqua;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,15 +14,15 @@
         button {
             white-space: nowrap;
             overflow: visible;
-            font-weight: 700;
-            font-size: 18px;
+            font-weight: 600;
+            font-size: 3vw;
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 425px) {
 
             @each $gridItem,
-            $column,
-            $row in $gridItems {
+            $row,
+            $column in $gridItems {
                 &.n#{$gridItem} {
                     grid-column: #{$column};
                     grid-row: #{$row};
@@ -36,5 +37,20 @@
             }
         }
 
+        @media screen and (min-width: 426px) {
+
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            button {
+                font-weight: 700;
+                font-size: 18px;
+
+                &:active+.skills__grid::after {
+                    display: block;
+                }
+            }
+        }
     }
 }
