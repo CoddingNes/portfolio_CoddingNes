@@ -7,47 +7,128 @@
         border-radius: 10px;
         border: solid 1px $primary-color;
         border-radius: 10px;
-        height: 200px;
+        // height: 200px;
 
-        &.hover::after {
+        &.flip {
+
+            @keyframes flip {
+                from {
+                    scaleY: 1;
+                }
+
+                to {
+                    scale: 1 0;
+                }
+            }
+
+            animation: flip 200ms ease-in-out 2 alternate forwards;
+        }
+
+
+        &::after {
             content: "";
             z-index: 0;
             position: absolute;
             left: 0;
             right: 0;
-            top: 0;
             bottom: 0;
+            height: 200px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 30%);
             border-radius: inherit;
         }
 
-        @media screen and (min-width: 768px) {
-            width: 350px;
-            height: 200px;
+        @media screen and (min-width: 769px) {
+            height: 400px;
+            width: 640px;
         }
 
+        & figure {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        & h3 {
+            padding: 0;
+            position: absolute;
+            left: 15px;
+            right: 15px;
+            bottom: -7px;
+            font-size: 13px;
+            color: white;
+            z-index: 3;
+
+            &.showDetails {
+                top: 0%;
+                bottom: 50px;
+            }
+
+            @media screen and (min-width: 426px) {
+                font-size: 18px;
+            }
+        }
+
+        & .project__details {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: inherit;
+            background-color: rgba(black, 0.8);
+            z-index: 2;
+        }
+
+        & p {
+            position: absolute;
+            top: 30%;
+            left: 15px;
+            right: 15px;
+            color: white;
+            text-align: left;
+            font-size: 3.2vw;
+
+            @media screen and (min-width: 426px) {
+                font-size: 16px;
+            }
+        }
+
+        & a {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            translate: -50% 0;
+            z-index: 3;
+
+            & .project__details-button {
+                font-size: 3vw;
+
+                @media screen and (min-width: 426px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        & .project__details-button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 6px;
+            background-color: rgb(201, 185, 253);
+            z-index: -1;
+        }
     }
 
-    & figure {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        border-radius: 10px;
-    }
 
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    & h3 {
-        position: absolute;
-        left: 20px;
-        bottom: -5px;
-        font-size: 14px;
-        color: white;
-        z-index: 2;
-    }
 }

@@ -24,7 +24,7 @@ const Realisations = () => {
             .then(data => {
                 const projectList = [];
                 for (let i = 0; i < data.length; i++) {
-                    if (filter === "Tout" || data[i].technos.includes(filter)) {
+                    if (filter === "Tout" || data[i].details.technos.includes(filter)) {
                         projectList.push(data[i]);
                     }
                 }
@@ -36,7 +36,9 @@ const Realisations = () => {
         getData(filter)
     }, [filter]);
 
-    //  react-uuid
+    // const [showDetails, setShowDetails] = useState(false);
+    // const [flip, setFlip] = useState(false);
+    const [hideDetails, setHideDetails] = useState(false);
 
     return (
         <>
@@ -47,15 +49,9 @@ const Realisations = () => {
                     <Button class={"realisations__buttons-button " + techno} title={techno} key={index} setFilter={setFilter} />
                 ))}
             </div>
-            {/* <div className='realisations__project-list'>
-                < Project title='HotTakes - Avis gastronomique sauces piquantes' alt='Accueil de HotTakes' link='https://github.com/CoddingNes/OCP6' />
-                < Project title='HotTakes - Avis gastronomique sauces piquantes' alt='Accueil de HotTakes' link='https://github.com/CoddingNes/OCP6' />
-                < Project title='HotTakes - Avis gastronomique sauces piquantes' alt='Accueil de HotTakes' link='https://github.com/CoddingNes/OCP6' />
-                < Project title='HotTakes - Avis gastronomique sauces piquantes' alt='Accueil de HotTakes' link='https://github.com/CoddingNes/OCP6' />
-            </div> */}
             <div className='realisations__project-list'>
                 {projects.map((projet, index) => (
-                    <Project title={projet.title} img={projet.img} alt={projet.alt} link={projet.link} key={index} />
+                    <Project hideDetails={hideDetails} setHideDetails={setHideDetails} title={projet.title} img={projet.img} alt={projet.alt} summary={projet.details.summary} link={projet.link} key={index} />
                 ))}
             </div>
         </>
