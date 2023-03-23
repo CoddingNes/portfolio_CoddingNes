@@ -12,7 +12,7 @@ const SkillView = (props) => {
         <div className={'skills__skillView ' + props.class}>
             <video className='skills__skillView-view' src={'./' + props.src + '.webm'} autoPlay={props.autoPlay} loop={props.loop} muted={props.muted} ></video>
             <h3 className='skills__skillView-title'>{props.title}</h3>
-            <i className="skills__skillView-close fa-solid fa-rectangle-xmark" onClick={changeView}></i>
+            <i className="skills__skillView-close fa-regular fa-circle-xmark" onClick={changeView}></i>
         </div>
     );
 };

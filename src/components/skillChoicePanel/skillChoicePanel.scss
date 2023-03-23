@@ -44,7 +44,8 @@
     }
 
     @media screen and (min-width: 426px) {
-        height: 50vw;
+        height: 38vw;
+        // height: fit-content;
         width: 70vw;
         display: flex;
         justify-content: space-around;
@@ -71,7 +72,6 @@
         &-skills {
             width: inherit;
             display: flex;
-
         }
     }
 }
