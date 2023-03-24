@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Alexandra_Nicolas/static/css/main.3d3bc735.css",
-    "main.js": "/Alexandra_Nicolas/static/js/main.7bc68f26.js",
-    "static/js/787.aeca62f9.chunk.js": "/Alexandra_Nicolas/static/js/787.aeca62f9.chunk.js",
-    "static/media/Blender.webm": "/Alexandra_Nicolas/static/media/Blender.e2e45ab91661ecd4c90a.webm",
-    "static/media/Switched_pitting_usb_key_text4_whiteback.png": "/Alexandra_Nicolas/static/media/Switched_pitting_usb_key_text4_whiteback.83da338e25e245a2e249.png",
-    "static/media/Background_white.png": "/Alexandra_Nicolas/static/media/Background_white.1843c2333c223eeff586.png",
-    "static/media/email_img.png": "/Alexandra_Nicolas/static/media/email_img.464c6df5bc243035eab5.png",
-    "index.html": "/Alexandra_Nicolas/index.html",
-    "main.3d3bc735.css.map": "/Alexandra_Nicolas/static/css/main.3d3bc735.css.map",
-    "main.7bc68f26.js.map": "/Alexandra_Nicolas/static/js/main.7bc68f26.js.map",
-    "787.aeca62f9.chunk.js.map": "/Alexandra_Nicolas/static/js/787.aeca62f9.chunk.js.map"
+    "main.css": "/portfolio_CoddingNes/static/css/main.1e4b5c38.css",
+    "main.js": "/portfolio_CoddingNes/static/js/main.d8b7993b.js",
+    "static/js/787.aeca62f9.chunk.js": "/portfolio_CoddingNes/static/js/787.aeca62f9.chunk.js",
+    "static/media/Blender.webm": "/portfolio_CoddingNes/static/media/Blender.e2e45ab91661ecd4c90a.webm",
+    "static/media/Switched_pitting_usb_key_text4_whiteback.png": "/portfolio_CoddingNes/static/media/Switched_pitting_usb_key_text4_whiteback.83da338e25e245a2e249.png",
+    "static/media/Background_white.png": "/portfolio_CoddingNes/static/media/Background_white.1843c2333c223eeff586.png",
+    "static/media/email_img.png": "/portfolio_CoddingNes/static/media/email_img.464c6df5bc243035eab5.png",
+    "index.html": "/portfolio_CoddingNes/index.html",
+    "main.1e4b5c38.css.map": "/portfolio_CoddingNes/static/css/main.1e4b5c38.css.map",
+    "main.d8b7993b.js.map": "/portfolio_CoddingNes/static/js/main.d8b7993b.js.map",
+    "787.aeca62f9.chunk.js.map": "/portfolio_CoddingNes/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d3bc735.css",
-    "static/js/main.7bc68f26.js"
+    "static/css/main.1e4b5c38.css",
+    "static/js/main.d8b7993b.js"
   ]
 }
