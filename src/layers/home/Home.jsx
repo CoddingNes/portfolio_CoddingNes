@@ -31,8 +31,8 @@ const Home = () => {
                     <i className="fa-solid fa-bars"></i>
                 </button>
             }
-
-
+            {/* <input type='checkbox' id='dark-light-mode' />
+            <label htmlFor='dark-light-mode'></label> */}
         </header>
     );
 };
