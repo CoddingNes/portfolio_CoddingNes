@@ -58,6 +58,10 @@
 
     }
 
+    & video {
+        background-color: white;
+    }
+
     &.showSkillView {
         opacity: inherit;
         z-index: 2;

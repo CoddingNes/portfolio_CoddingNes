@@ -16,12 +16,13 @@ const Form = () => {
         emailjs.sendForm('service_d5jz5bl', 'template_uzjrtr8', form.current, 'XiNbf4nHndikDxCBL')
             .then((result) => {
                 console.log(result.text);
-                document.querySelector('.form__send-button').value = "J'ai bien reçu votre message, merci !";
+                document.querySelector('.contact__form__send-button').value = "J'ai bien reçu votre message, merci !";
                 setTimeout(() => {
-                    document.querySelector('.form__user-name-input').value = '';
-                    document.querySelector('.form__user-email-input').value = '';
-                    document.querySelector('.form__message-input').value = '';
-                    document.querySelector('.form__send-button').value = "Envoyer";
+                    console.log("effacé");
+                    document.querySelector('.contact__form__user-name-input').value = '';
+                    document.querySelector('.contact__form__user-email-input').value = '';
+                    document.querySelector('.contact__form__message-input').value = '';
+                    document.querySelector('.contact__form__send-button').value = "Envoyer";
                 }, 3000
                 )
 
