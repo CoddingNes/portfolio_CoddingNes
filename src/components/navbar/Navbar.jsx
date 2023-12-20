@@ -46,10 +46,10 @@ const Navbar = (props) => {
                 <li className="home__nav-bar__nav">
                     <a href="#contact">Contact</a>
                 </li>
-                <li className="home__nav-bar__nav">
+                {/* <li className="home__nav-bar__nav">
                     <input type='checkbox' id='dark-light-mode' />
                     <label htmlFor='dark-light-mode'></label>
-                </li>
+                </li> */}
             </ul>
         </nav >
     );

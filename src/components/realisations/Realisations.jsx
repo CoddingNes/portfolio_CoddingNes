@@ -32,6 +32,8 @@ const Realisations = () => {
             })
     };
 
+    console.log(projects);
+
     useEffect(() => {
         getData(filter)
     }, [filter]);
@@ -51,8 +53,13 @@ const Realisations = () => {
             </div>
             <div className='realisations__project-list'>
                 {projects.map((projet, index) => (
-                    <Project hideDetails={hideDetails} setHideDetails={setHideDetails} title={projet.title} img={projet.img} alt={projet.alt}
-                        // summary={projet.details.summary} 
+                    <Project
+                        hideDetails={hideDetails}
+                        setHideDetails={setHideDetails}
+                        title={projet.title}
+                        img={projet.img}
+                        alt={projet.alt}
+                        summary={projet.details.summary}
                         link={projet.link} key={index} />
                 ))}
             </div>

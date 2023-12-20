@@ -28,7 +28,6 @@ const createRandomList = () => {
             usedInt.push(randomInt);
         }
     }
-    console.log(randomSkills);
 }
 
 createRandomList()

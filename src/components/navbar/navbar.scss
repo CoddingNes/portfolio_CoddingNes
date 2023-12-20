@@ -106,60 +106,67 @@
     }
 }
 
-label {
-    width: $darkMode__label-width;
-    height: $darkMode__label-height;
-    position: relative;
-    // position: absolute;
-    // right: 20px;
-    // top: 20px;
-    display: block;
-    background: #ebebeb;
-    border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
-    cursor: pointer;
+#home {
+    label {
+        width: $darkMode__label-width;
+        height: $darkMode__label-height;
+        position: relative;
+        // position: absolute;
+        // right: 20px;
+        // top: 20px;
+        display: block;
+        background: #ebebeb;
+        border-radius: 200px;
+        box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+        cursor: pointer;
 
-    &:after {
-        content: "";
-        width: $darkMode__labelCursor-size;
-        height: $darkMode__labelCursor-size;
+        &:after {
+            content: "";
+            width: $darkMode__labelCursor-size;
+            height: $darkMode__labelCursor-size;
+            position: absolute;
+            top: $darkMode__labelCursor-initialPosition;
+            left: $darkMode__labelCursor-initialPosition;
+            background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(97, 58, 231, 1) 60%, rgba(0, 0, 0, 1) 98%);
+            border-radius: 180px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        &:hover:after {
+            width: $darkMode__activeLabel-width;
+            transform-origin: $darkMode__Label-initialOrigin;
+        }
+    }
+
+    input {
         position: absolute;
-        top: $darkMode__labelCursor-initialPosition;
-        left: $darkMode__labelCursor-initialPosition;
-        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(97, 58, 231, 1) 60%, rgba(0, 0, 0, 1) 98%);
-        border-radius: 180px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        width: 0;
+        height: 0;
+        visibility: hidden;
     }
 
-    &:hover:after {
+    input:checked+label {
+        background: #242424;
+    }
+
+    input:checked+label:after {
+        left: auto;
+        transform: translateX($darkMode__labelCursor-finalPosition);
+        background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(97, 58, 231, 1) 68%);
+    }
+
+    input:checked+label:hover:after {
         width: $darkMode__activeLabel-width;
-        transform-origin: $darkMode__Label-initialOrigin;
+        transform: translateX($darkMode__checkedLabelCursor-finalPosition);
+    }
+
+    label,
+    label:after {
+        transition: 0.3s
     }
 }
 
-input {
-    position: absolute;
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-
-input:checked+label {
-    background: #242424;
-}
-
-input:checked+label:after {
-    left: auto;
-    transform: translateX($darkMode__labelCursor-finalPosition);
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(97, 58, 231, 1) 68%);
-}
-
-input:checked+label:hover:after {
-    width: $darkMode__activeLabel-width;
-    transform: translateX($darkMode__checkedLabelCursor-finalPosition);
-}
-
-label,
-label:after {
-    transition: 0.3s
+input:checked>body {
+    background-color: #242424;
+    color: white;
 }

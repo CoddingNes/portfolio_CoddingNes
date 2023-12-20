@@ -4,14 +4,12 @@ import Presentation from '../../components/presentation/Presentation';
 import Realisations from '../../components/realisations/Realisations';
 import Sections from '../../components/sections/Sections';
 import SkillChoicePanel from '../../components/skillChoicePanel/SkillChoicePanel';
-import Video from '../../components/video/Video';
 import './main.scss';
 
 
 const Main = () => {
     return (
         <main>
-            {/* <Sections title="Video" subtitle="VIDEO" content={<Video />} /> */}
             <Sections title="Présentation" subtitle="PRESENTATION" content={<Presentation />} id="presentation" />
             <Sections title="Compétences" subtitle="COMPETENCES" content={<SkillChoicePanel />} id="skills" />
             <Sections title="Réalisations" subtitle="REALISATIONS" content={<Realisations />} id="realisations" />
