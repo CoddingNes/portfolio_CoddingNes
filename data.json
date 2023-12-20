@@ -1,9 +1,23 @@
 [
   {
+    "title": "BG Photographies - Site officiel de photographe professionnel",
+    "img": "BGPhotographies.png",
+    "alt": "Screenshot page d'accueil de GB Photographies",
+    "link": "https://coddingnes.github.io/Benoit-Gradel-Photographies.github.io/",
+    "details": {
+      "summary": "Projet freelance. Refonte d'un site existant avec ajout d'animations.",
+      "technos": [
+        "Sass",
+        "React",
+        "JavaScript"
+      ]
+    }
+  },
+  {
     "title": "Portfolio - Alexandra aka CoddingNes",
     "img": "portfolio.png",
     "alt": "Screenshot page d'accueil du portfolio",
-    "link": "https://coddingnes-dev.fr/Alexandra_Nicolas/",
+    "link": "https://coddingnes-dev.fr/",
     "details": {
       "summary": "Projet solo. Mise en application des connaissances issue de formation développeur web, du maquettage à la mise en ligne.",
       "technos": [
@@ -32,7 +46,7 @@
     "alt": "Fiche de présentation d'un logement du site kasa",
     "link": "https://coddingnes-dev.fr/kasa/",
     "details": {
-      "summary": "",
+      "summary": "Découverte de React. Intégration d'un site complet et dynamique.",
       "technos": [
         "Sass",
         "React",
@@ -58,9 +72,9 @@
     "title": "Kanap - Site e-commerce de canapés",
     "img": "kanap.png",
     "alt": "Accueil de kanap",
-    "link": "",
+    "link": "https://coddingnes-dev.fr/kanap/front/html",
     "details": {
-      "summary": "",
+      "summary": "Utilisation du JavaScript pour une intégration dynamique des objets issus d'une API",
       "technos": [
         "JavaScript"
       ]
@@ -72,7 +86,7 @@
     "alt": "Accueil du site la Panthère",
     "link": "",
     "details": {
-      "summary": "",
+      "summary": "Optimisation d'un site vitrine pour améliorer référencement et accessibilité",
       "technos": [
         "HTML",
         "CSS"
@@ -85,7 +99,7 @@
     "alt": "Menu de restaurant",
     "link": "https://coddingnes-dev.fr/ohmyfood/",
     "details": {
-      "summary": "",
+      "summary": "Création et développement d'animations CSS pour l'affichage de menus de restaurants selon maquette. Découverte de sass pour simplifier le CSS",
       "technos": [
         "HTML",
         "Sass"
@@ -98,7 +112,7 @@
     "alt": "Screenshot navbarre et choix d'hébergement",
     "link": "https://coddingnes-dev.fr/booki/",
     "details": {
-      "summary": "",
+      "summary": "Intégration responsive d'une maquette",
       "technos": [
         "HTML",
         "CSS"
